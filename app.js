@@ -41,5 +41,4 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoriesRoute);
-
-app.listen("5000", connectDB);
+app.listen(process.env.PORT || "5000", connectDB);
