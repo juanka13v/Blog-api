@@ -6,9 +6,11 @@ const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const categoriesRoute = require("./routes/categories");
+const cors = require("cors")
 const multer = require("multer");
 
 app.use(express.json());
+app.use(cors())
 
 const connectDB = () => {
   try {
